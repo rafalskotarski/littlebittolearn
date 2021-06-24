@@ -1,0 +1,15 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "Airbnb project fo Burza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "scottie",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
