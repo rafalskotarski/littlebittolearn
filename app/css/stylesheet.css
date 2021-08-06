@@ -2,36 +2,55 @@
   box-sizing: border-box; }
 
 body {
+  display: flex;
+  flex-flow: column nowrap;
   font-size: 1em;
   line-height: 1.5;
   color: #717171;
-  margin: 0;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; }
+
+main, .title, .butall {
+  margin: 0px 25px; }
 
 h1 {
   font-size: 2em;
-  line-height: 1.5;
+  line-height: 1;
   color: #212121;
-  margin: 0; }
+  margin: 15px 0px; }
 
 h2 {
   font-family: "Abolition Regular", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1.1;
   color: #212121;
-  font-weight: normal;
-  margin: 0 0 .5em; }
+  font-weight: 450;
+  margin: 40px 0px; }
 
 h3 {
   font-size: 1.15em;
   line-height: 1.2;
   color: #212121;
-  margin-bottom: 1.7em; }
+  font-weight: 600;
+  margin: 0px 0px 15px; }
 
-img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px; }
+p {
+  max-width: 500px; }
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #717171;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  background: #f7f7f7; }
+
+button {
+  width: calc(100%-50px);
+  background: #fff;
+  border-color: #212121;
+  border-radius: 4px;
+  border-width: 1px; }
 
 ul,
 ol {
@@ -52,11 +71,13 @@ a:hover {
   color: rgba(255, 169, 73, 0.5); }
 
 .header {
-  object-fit: contain; }
+  object-fit: contain;
+  max-width: 100%; }
 
 .logo {
   color: #212121;
-  letter-spacing: -0.02em; }
+  letter-spacing: -0.02em;
+  margin: 0; }
 
 .logo2 {
   color: #fff;
@@ -64,146 +85,114 @@ a:hover {
   border-radius: 5px;
   padding: 1.5px 4.5px; }
 
-.main-header {
-  padding-top: 170px;
-  height: 850px;
-  background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url("../img/mountains.jpg") no-repeat center;
-  background-size: cover; }
+.butann {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-weight: 350; }
 
-@media (max-width: 768px) {
-  .main-header {
-    max-height: 380px;
-    padding: 50px 25px 0; } }
+.ann {
+  width: 70px;
+  height: 40px;
+  margin: 0px 20px 0px 0px; }
 
-.main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #ffa949; }
+.line {
+  padding-top: 24px;
+  border-top: 1px solid #EBEBEB;
+  margin-top: 24px; }
 
-@media (max-width: 768px) {
-  .main-footer {
-    padding: 20px 0; } }
+.tline {
+  border-top: 2px solid #484848;
+  margin-top: 30px; }
 
-.primary-content {
-  padding-top: 25px;
-  padding-bottom: 95px; }
+.ftTitle {
+  font-size: 1em; }
 
-.secondary-content {
-  padding-top: 80px;
-  padding-bottom: 70px;
-  border-bottom: 2px solid #e0e0e0; }
+.ftList {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
-.wildlife {
-  color: #fff;
-  text-align: left;
-  padding: 18% 24%;
-  border-top: 10px solid #ffa949;
-  margin: 105px 0 60px;
-  background: #48525c url("../img/bear.jpg") no-repeat center;
-  background-size: cover;
-  box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.8);
-  border-radius: 10px; }
+.ftListItem {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
-@media (max-width: 1024px) {
-  .wildlife {
-    padding: 10% 12%;
-    margin: 50px 0 20px; } }
-
-.tips {
-  float: left; }
-
-.resorts {
-  float: right; }
-
-.main-header, .main-footer, .primary-content {
-  text-align: center; }
-
-.primary-content, .secondary-content {
-  border-top: 2px solid #e0e0e0; }
-
-.primary-content, .secondary-content {
-  width: 75%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px; }
-
-@media (max-width: 1024px) {
-  .primary-content, .secondary-content {
-    width: 90%; } }
-
-@media (max-width: 768px) {
-  .primary-content, .secondary-content {
-    width: 100%;
-    padding: 20px;
-    border-top: none; } }
-
-.tips, .resorts {
-  width: 46.5%; }
-
-@media (max-width: 768px) {
-  .tips, .resorts {
-    float: none;
-    width: 100%; } }
-
-.secondary-content:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* Web Fonts -------------------- */
-@font-face {
-  font-family: "Abolition Regular";
-  src: url("../fonts/abolition-regular-webfont.eot");
-  src: url("../fonts/abolition-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abolition-regular-webfont.woff") format("woff"), url("../fonts/abolition-regular-webfont.ttf") format("truetype"); }
-
-.main-heading {
-  font-size: 5.625rem;
-  line-height: 1.3;
-  font-weight: normal;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-  margin: 12px 0 0; }
-
-@media (max-width: 768px) {
-  .main-heading {
-    font-size: 5rem;
-    line-height: 1.1; } }
-
-.main-title {
-  font-size: 1.625rem;
-  font-weight: 200;
-  color: #fff;
-  letter-spacing: .065em;
-  border-bottom: 2px solid;
-  padding-bottom: 10px; }
-
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 1.3rem;
-    border: none; } }
-
-.intro {
-  font-size: 1.25em;
-  line-height: 1.6;
-  color: initial; }
-
-@media (max-width: 768px) {
-  .intro {
-    font-size: 1rem; } }
-
-.callout {
-  font-size: 1.25em;
-  border-bottom: 3px solid;
-  padding: 0 9px 3px;
-  margin-top: 20px;
+.ftLinks {
   display: inline-block; }
 
-.arrow {
-  width: 50px;
-  margin-top: 150px; }
+.ftLanguage, .ftCurrency {
+  font-weight: bold; }
 
-@media (max-width: 768px) {
-  .arrow {
-    display: none; } }
+.ftLanguage {
+  margin-right: 10px; }
+
+.lowResImg {
+  visibility: visible;
+  display: block; }
+
+.highResImg {
+  visibility: hidden;
+  display: none; }
+
+#Header2 {
+  visibility: hidden;
+  display: none; }
+
+@media (min-width: 745px) {
+  .title {
+    max-width: 375px; }
+  .butall {
+    max-width: 375px; }
+  .lowResImg {
+    visibility: hidden;
+    display: none; }
+  .highResImg {
+    visibility: visible;
+    display: block;
+    width: 208px;
+    height: 425px; }
+  .flexcolumn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+  .para {
+    height: 72px; }
+  .item {
+    flex: 1 2 50%; }
+  .ftList {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .ftListItem {
+    list-style: none;
+    padding: 0;
+    margin: 0; } }
+
+@media (min-width: 950px) {
+  .title {
+    margin-top: -20%; }
+  .butann {
+    max-width: 375px; }
+  #Header {
+    visibility: hidden;
+    display: none; }
+  #Header2 {
+    visibility: visible;
+    display: block; }
+  .item {
+    flex: 1 2 50%; } }
+
+@media (min-width: 1128px) {
+  main, .title, .butall {
+    margin-left: 50px;
+    margin-right: 50px; }
+  .title {
+    font-size: 1.5em; }
+  .title {
+    max-width: 485px; }
+  .item {
+    flex: 1 1 33%; } }
